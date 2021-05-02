@@ -4,7 +4,7 @@
   z-index: 50;
   background-image: url("../images/car-bg.jpeg");
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
 }
 
