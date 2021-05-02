@@ -1,0 +1,99 @@
+.home__bg {
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-image: url("../images/painting-background-image.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.home__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__container h1 {
+  font-size: 10vw;
+  font-weight: 100;
+  font-family: var(--grand-font);
+  cursor: none;
+  margin: 20px 0px;
+}
+
+@media only screen and (min-width: 800px) {
+  .home__container h1 {
+    font-size: 8vw;
+  }
+}
+
+.home__container P {
+  font-size: 18px;
+  font-family: var(--mordern-font);
+  letter-spacing: 2px;
+  max-width: 80%;
+  cursor: none;
+  font-weight: 200;
+}
+
+.home__container a {
+  font-family: var(--mordern-font);
+  font-size: 19px;
+  display: inline-block;
+  margin: 20px 0px;
+  cursor: none;
+  color: #eaeaea;
+  background-color: #676776;
+  padding: 15px 60px;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 30px 0px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.scroll {
+  padding: 90px 0px;
+  font-family: var(--grand-font);
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.scroll-ltr {
+  font-size: 80px;
+  white-space: nowrap;
+  animation: scroll-ltr 40s linear infinite;
+}
+.scroll-rtl {
+  white-space: nowrap;
+  font-size: 80px;
+  animation: scroll-rtl 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes scroll-ltr {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes scroll-rtl {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

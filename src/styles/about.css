@@ -1,0 +1,43 @@
+.about__container {
+  padding: 100px 0px;
+  width: 80%;
+  margin: auto;
+}
+
+.about__container h2 {
+  font-size: 9vw;
+  font-weight: 100;
+  font-family: var(--grand-font);
+  cursor: none;
+  margin: 40px 0px;
+}
+
+.about__container p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.about__container a {
+  color: var(--light--white);
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.about__container a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--light-white);
+  transition-duration: 0.3s;
+}
+
+.about__container a:hover::after {
+  width: 100%;
+}
+
+.about__container img {
+  width: 250px;
+  margin: 30px auto;
+}

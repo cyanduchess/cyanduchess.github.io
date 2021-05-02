@@ -1,0 +1,33 @@
+main h2 {
+  font-size: 9vw;
+  font-weight: 100;
+  font-family: var(--grand-font);
+  cursor: none;
+  margin: 40px 0px;
+}
+
+main {
+  padding: 50px 0px;
+  width: 80%;
+  margin: auto;
+}
+
+main a {
+  font-size: 20px;
+  color: var(--light-white);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #c00;
+  cursor: none;
+  border-radius: 2px;
+}
+
+main iframe {
+  max-width: 90%;
+  display: block;
+  margin: 40px 0px;
+}
+
+main p {
+  font-weight: 200;
+}
